@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.header {
+    text-align: center;
+    padding: 10vh 0;
+    background-color: #36454F;
+    color: white;
+}
+
+.header h1,
+p {
+    margin: 15px;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav a {
+    padding: 12px;
+    color: white;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.active{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me,
+.title-heading {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 5px;
+}
+
+.about-me {
+    width: 30%;
+}
+
+@media screen and (max-width:400px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.about-me img {
+    height: 30vh;
+    width: 97%;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.title-heading {
+    width: 68%;
+}
+
+.about-me h3,
+.title-heading h3,
+.image-container h3 {
+    text-align: left;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.title-heading img {
+    height: 35vh;
+    width: 98%;
+    border: none;
+    border-radius: 8px;
+    border: none;
+    border-radius: 8px;
+    margin: 9px;
+}
+
+.image-container img {
+    height: 20vh;
+    width: 90%;
+    margin: auto;
+}
+
+/* 
+.title-heading p {
+    letter-spacing: 3px;
+} */
+
+.about-me p {
+    letter-spacing: 2px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5vh;
+    border: 1px solid white;
+}
+
+.bottom{
+    margin-top: 9px;
+}
+
+@media screen and (max-width: 816px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .about-me,
+    .title-heading {
+        width: 100%;
+    }
+}
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    width: 35vh;
+}
+
+.card img {
+    height: 25vh;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.card input {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: black;
+    color: white;
+    padding: 4px;
+}
+
+@media screen and (max-width: 816px) {
+    .d-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 40vh;
+    }
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 12px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.contact-info {
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 250px;
+    }
+    .container input{
+        width: 200px;
+    }
+}

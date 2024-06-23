@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            background: url(coffee-ai-generated.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cbccc7;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Café Serenity</h1>
+        <p>A Taste of Calm, One Cup at a Time</p>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="left">Home</a>
+            <a href="menu-items.html" class="left">Menu-Items</a>
+            <a href="contact-us.html" class="left active">Contact Us</a>
+            <a href="sign-in.html" class="right">Sign-in</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Cafe Street, City, Country</p>
+            <p><strong>Email:</strong> info@cafeserenity.com</p>
+            <p><strong>Phone:</strong> +1234567890</p>
+        </div>
+        
+        <div class="contact-form">
+            <form action="submit_contact_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
